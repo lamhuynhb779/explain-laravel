@@ -1,0 +1,43 @@
+<script>
+    /**
+     * Function returning a function
+     */
+    function youSayGoodbye() {
+
+        alert("Goodbye!");
+
+        function andISayHello() {
+            alert("Hello!");
+        }
+
+        return andISayHello;
+    }
+
+    /**
+     * A more realistic example
+     */
+    function stopWatch() {
+
+        var startTime = Date.now();
+
+        function getDelay() {
+            var elapsedTime = Date.now() - startTime;
+            alert(elapsedTime);
+        }
+
+        return getDelay;
+    }
+
+    // var something = youSayGoodbye();
+    // something();
+
+    var timer = stopWatch();
+
+    for (let index = 0; index < 100000; index++) {
+        var foo = Math.random() * 10000;
+    }
+
+    timer();
+
+    // -> closure = function + outer context (variables this function relies on)
+</script>
