@@ -1,0 +1,10 @@
+Tutorial:
+
+Explain-laravel
+https://www.youtube.com/watch?v=PGVqkEZiUoc
+
+Explain closure
+https://www.youtube.com/watch?v=rBBwrBRoOOY
+
+Explain facade
+https://www.youtube.com/watch?v=zD2VJhOdI5c
